@@ -18,52 +18,72 @@
 }
 
 .content-box{
-    height: 500px;
-    width: 500px;
-    background-color: orangered;
+    height: 400px;
+    width: 400px;
+    padding: 50px;
+    background-color: black;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
     gap: 12px;
     border: 2px solid white;
+    border-radius: 20px;
     position: relative;
 }
 
 h1{
     position: absolute;
-    top: 50px;
+    top: 20px;
+    left : 100px;
     color: aqua;
 }
-
-.weight-input{
-    height: 30px;
-    width: 250px;
-    border: 2px solid #03fc0b;
-    border-radius: 5px;
-    background: white;
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
 }
 
-.height-input{
-    height: 30px;
-    width: 250px;
-    border: 2px solid #03fc0b;
-    border-radius: 5px;
-    background: white;
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s;
+
 }
 
-.display-bmi{
-    height: 30px;
-    width: 80px;
-    border: 2px solid #03fc0b;
-    border-radius: 5px;
-    background: white;
+input[type="number"]:focus {
+    outline: none;
+    border-color: #03fc0b;
 }
+.weight{
+    margin-left: 30px;
+}
+.height{
+    margin-left: 30px;
+}
+.display{
+    margin-left: 30px;
+}
+
+.display-bmi {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
 
 .indicator-check{
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 #status{
@@ -74,24 +94,20 @@ h1{
 
 #indi{
     font-size: larger;
-    color: black;
+    color: rgb(58, 239, 3);
     font-weight: bolder;
+    margin-left: 20px;
 }
 
-/*button{*/
-/*    height: 30px;*/
-/*    width: 100px;*/
-/*    border: 2px solid deeppink;*/
-/*    border-radius: 5px;*/
-/*}*/
-
-/*button:hover{*/
-/*    background-color: hotpink;*/
-/*    cursor: pointer;*/
-/*}*/
 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f20049;
+    width: 150px;
+    height : 40px;
     padding: 0.8rem 2rem;
+    margin-left: 32%;
     color: white;
     font-weight: bold;
     box-shadow: 2px 2px 3px 0px black;
