@@ -9,12 +9,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(
+    /* background: linear-gradient(
             231deg,
             rgba(22, 6, 40, 1) 0%,
             rgba(52, 28, 79, 1) 50%,
             rgba(88, 7, 125, 1) 100%
-    );
+    ); */
+    background-image: url(white.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .content-box{
